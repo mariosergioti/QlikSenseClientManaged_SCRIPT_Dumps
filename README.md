@@ -73,7 +73,6 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
 ## 📧 Exemplos de Notificações
 
 ### ▶️ E-mail de Início
-![Print do Email de Início](./screenshot/print01_iniciando.png)
 
 ### ✅ E-mail de Sucesso
 
