@@ -1,5 +1,7 @@
 # 📦 Cubotimize - Backup de Aplicações Qlik Sense (QVF)
 
+[](https://www.google.com/search?q=./QlikSense_SCRIPT_Dumps_QVFs_QlikSenseClientManaged_MarioSoares_v2.4.0.ps1)
+
 Script em PowerShell para automação de dumps/backups de aplicativos (.qvf) do **Qlik Sense Client-Managed**.
 
 Esta solução realiza a extração de todos os aplicativos do ambiente (tanto os Publicados em Fluxos quanto os Não Publicados nas Áreas de Trabalho dos usuários), organiza em pastas, gerencia a retenção de dados antigos e envia um relatório executivo em HTML via e-mail.
@@ -11,6 +13,22 @@ Esta solução realiza a extração de todos os aplicativos do ambiente (tanto o
   * **Gestão de Retenção:** Exclui automaticamente backups mais antigos que o limite configurado (ex: D-60).
   * **Auto-Hostname:** Identifica automaticamente o nome do servidor, ideal para ambientes em Cluster.
   * **Relatório Executivo HTML:** Envio de e-mails com design responsivo, ícones de alto contraste e resumo agregado de falhas e sucessos.
+
+-----
+
+## 📋 Requisitos e Preparação
+
+Para que o script consiga se comunicar com a API do Qlik Sense, é necessário ter o módulo PowerShell **Qlik-Cli-Windows** instalado no servidor onde a automação vai rodar.
+
+### Como instalar e preparar o Qlik-Cli:
+
+1.  Abra o **PowerShell como Administrador** no servidor do Qlik Sense.
+2.  Execute o comando abaixo para instalar o módulo a partir da galeria oficial:
+    ```powershell
+    Install-Module -Name Qlik-Cli-Windows -Force
+    ```
+    *(Nota: Se o Windows perguntar sobre repositórios não confiáveis "PSGallery", digite `Y` ou `A` para aceitar).*
+3.  **Pronto\!** O script já está programado para buscar automaticamente os certificados internos do Qlik Sense (na raiz `Cert:\LocalMachine\My` ou `Cert:\CurrentUser\My`) e autenticar a conexão de forma silenciosa e segura.
 
 -----
 
@@ -83,4 +101,11 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
 
 -----
 
-**Autor:** Mario Sergio Soares | [Cubotimize](https://cubotimize.com)
+### 👨‍💻 Autor e Contatos
+
+**Mario Sergio Soares**
+
+  * 🌐 **Bio Page & Projetos:** [cubo.plus/mariosergioti](https://cubo.plus/mariosergioti)
+  * 💼 **LinkedIn:** [linkedin.com/in/mariosergioti](https://www.google.com/search?q=https://linkedin.com/in/mariosergioti)
+  * 🏢 **Empresa:** [Cubotimize](https://cubotimize.com)
+  * 📊 **Mais Materiais Qlik:** [Meus Documentos, Apps e Arquivos na Qlik Community](https://community.qlik.com/t5/Brasil/Publica%C3%A7%C3%B5es-de-MARIO-SOARES-Documentos-Aplicativos-e-Arquivos/td-p/1464214)
