@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Cubotimize - Backup de Aplicações Qlik Sense (QVF)
+Cubotimize - Backup de Aplicações Qlik Sense Client-Managed (QVF)
 
 .DESCRIPTION
 Script para controle de backups dos apps (Publicados e Não Publicados) do Qlik Sense Client-Managed.
@@ -9,7 +9,7 @@ em HTML via E-mail com ícones de status (Alto Contraste) e cores dinâmicas.
 Script universal: identifica automaticamente o servidor (hostname) para direcionar o destino.
 
 .NOTES
-Versão: 2.4.0 (Template Universal via Auto-Hostname)
+Versão: 2.4.0
 Licença: MIT License
 Créditos: Mario Sergio Soares
 Bio Page: https://cubo.plus/mariosergioti
