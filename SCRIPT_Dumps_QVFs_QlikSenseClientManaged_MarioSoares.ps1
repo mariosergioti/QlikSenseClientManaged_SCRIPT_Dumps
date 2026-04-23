@@ -39,6 +39,9 @@ $vEmailRemetente    = "TROCAR@gmail.com"
 $vSenhaAppGmail     = "TROCAR"
 $vEmailDestino      = "TROCAR", "TROCAR"
 
+# Força o PowerShell a usar o protocolo de segurança TLS 1.2 (Exigido pelo Gmail)
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 # =================================================================
 # FUNÇÃO DE ENVIO DE E-MAIL HTML (TEMPLATE CUBOTIMIZE)
 # =================================================================
