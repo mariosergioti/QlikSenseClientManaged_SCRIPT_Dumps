@@ -1,6 +1,5 @@
 # 📦 Backups de Aplicações Qlik Sense Client-Managed (QVF)
-[![Baixar Script](https://img.shields.io/badge/📥_Baixar_Script-v2.4.1-2E63E6?style=for-the-badge)](https://github.com/mariosergioti/QlikSense_SCRIPT_Dumps_QVFs_QlikSenseClientManaged/releases/download/v2.4.1/SCRIPT_Dumps_QVFs_QlikSenseClientManaged_MarioSoares.ps1
-)
+[![Baixar Script](https://img.shields.io/badge/📥_Baixar_Script-v2.4.1-2E63E6?style=for-the-badge)](https://github.com/mariosergioti/QlikSense_SCRIPT_Dumps_QVFs_QlikSenseClientManaged/releases/download/v2.4.1/SCRIPT_Dumps_QVFs_QlikSenseClientManaged_MarioSoares.ps1)
 
 Script em PowerShell para automação de dumps/backups de aplicativos (.qvf) do **Qlik Sense Client-Managed**.
 
@@ -14,7 +13,7 @@ Esta solução realiza a extração de todos os aplicativos do ambiente (tanto o
   * **Auto-Hostname:** Identifica automaticamente o nome do servidor, ideal para ambientes em Cluster.
   * **Relatório Executivo HTML:** Envio de e-mails com design responsivo, ícones de alto contraste e resumo agregado de falhas e sucessos.
 
------
+---
 
 ## 📋 Requisitos e Preparação
 
@@ -28,22 +27,22 @@ Para que o script consiga se comunicar com a API do Qlik Sense, é necessário t
     Install-Module -Name Qlik-Cli-Windows -Force
     ```
     *(Nota: Se o Windows perguntar sobre repositórios não confiáveis "PSGallery", digite `Y` ou `A` para aceitar).*
-3.  **Pronto\!** O script já está programado para buscar automaticamente os certificados internos do Qlik Sense (na raiz `Cert:\LocalMachine\My` ou `Cert:\CurrentUser\My`) e autenticar a conexão de forma silenciosa e segura.
+3.  **Pronto!** O script já está programado para buscar automaticamente os certificados internos do Qlik Sense (na raiz `Cert:\LocalMachine\My` ou `Cert:\CurrentUser\My`) e autenticar a conexão de forma silenciosa e segura.
 
------
+---
 
 ## ⚙️ Configuração do Script
 
 Antes de executar, você precisa ajustar algumas variáveis no arquivo `.ps1`:
 
-### 1\. Diretório de Backup (`$vPastaBackup`)
+### 1. Diretório de Backup (`$vPastaBackup`)
 
 Defina onde os arquivos `.qvf` serão salvos. Pode ser um diretório local ou um caminho de rede (Storage/ClusterFS).
 
   * **Atenção aos Caminhos de Rede:** Se for utilizar um mapeamento de rede (ex: `\\SERVIDOR\BACKUP\QLIK\`), certifique-se de que o usuário que vai executar o script tem permissão de **Leitura e Escrita** nessa pasta.
   * *Dica:* Antes de rodar o script, copie o caminho configurado, abra o **Windows Explorer** no servidor do Qlik Sense com o usuário de serviço e tente colar o caminho lá. Se você conseguir criar um arquivo `.txt` manualmente nessa pasta, o script também conseguirá.
 
-### 2\. Configurações de E-mail (Google/Gmail)
+### 2. Configurações de E-mail (Google/Gmail)
 
 O script está pré-configurado para usar o SMTP do Gmail. Você precisará ajustar as variáveis `$vEmailRemetente`, `$vEmailDestino` e `$vSenhaAppGmail`.
 
@@ -57,7 +56,7 @@ O Google não permite mais usar a sua senha normal para scripts. Você precisa g
 5.  Crie um nome para o app (ex: "Script Qlik Backup") e clique em **Gerar**.
 6.  Copie a senha de 16 letras (sem espaços) e cole na variável `$vSenhaAppGmail` do script.
 
------
+---
 
 ## 🚀 Como Agendar no Windows (Task Scheduler)
 
@@ -68,7 +67,7 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
 1.  No servidor do Qlik Sense, aperte `Win + R`, digite **`services.msc`** e dê Enter.
 2.  Na lista de serviços, procure por serviços que começam com **"Qlik Sense"** (ex: *Qlik Sense Engine Service*, *Qlik Sense Repository Service*).
 3.  Olhe para a coluna **"Fazer Logon Como"** (Log On As).
-4.  Anote esse nome de usuário (ex: `DOMINIO\qlik_service`). Este é o usuário que deve executar a tarefa agendada\!
+4.  Anote esse nome de usuário (ex: `DOMINIO\qlik_service`). Este é o usuário que deve executar a tarefa agendada!
 
 ### Passo 2: Criar a Tarefa Agendada
 
@@ -86,7 +85,7 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
       * Adicione os argumentos (ajuste o caminho): `-ExecutionPolicy Bypass -File "C:\Caminho\Para\O\Script\QlikSense_SCRIPT_Dumps.ps1"`
 6.  Salve a tarefa (o Windows pedirá a senha do usuário de serviço).
 
------
+---
 
 ## 📧 Exemplos de Notificações
 
@@ -99,7 +98,7 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
 ### ⚠️ E-mail com Alertas/Falhas
 ![Print do Email de Início](./screenshot/Print_02_DumpQVF_ScriptConcluidoComFalhas.png)
 
------
+---
 
 ### 👨‍💻 Autor e Contatos
 
