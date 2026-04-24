@@ -2,7 +2,7 @@
 [![Versão](https://img.shields.io/badge/Versão-2.4.1-2E63E6?style=for-the-badge)](https://github.com/mariosergioti/QlikSense_SCRIPT_Dumps_QVFs_QlikSenseClientManaged/archive/refs/tags/v2.4.1.zip)
 [![Licença](https://img.shields.io/badge/Licença-MIT-3BE854?style=for-the-badge)](LICENSE)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?style=for-the-badge&logo=powershell)](#-requisitos-e-prepara%C3%A7%C3%A3o)
-[![Qlik Cloud](https://img.shields.io/badge/Qlik-Sense_Client_Managed-009845?style=for-the-badge)](https://www.qlik.com/us/trial/qlik-cloud-analytics)
+[![Qlik Sense](https://img.shields.io/badge/Qlik-Sense_Client_Managed-009845?style=for-the-badge)](https://www.qlik.com/us/trial/qlik-cloud-analytics)
 
 [![Baixar Script](https://img.shields.io/badge/📥_Baixar_Script-2E63E6?style=for-the-badge)](https://github.com/mariosergioti/QlikSense_SCRIPT_Dumps_QVFs_QlikSenseClientManaged/archive/refs/tags/v2.4.1.zip)
 
