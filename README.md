@@ -109,7 +109,8 @@ Para que o backup rode de forma 100% autônoma e com as permissões corretas par
 
 **Mario Sergio Soares**
 
-  * 🌐 **Bio Page & Projetos:** [cubo.plus/mariosergioti](https://cubo.plus/mariosergioti)
-  * 💼 **LinkedIn:** [linkedin.com/in/mariosergioti](https://linkedin.com/in/mariosergioti)
-  * 🏢 **Empresa:** [Cubotimize](https://cubotimize.com)
-  * 📊 **Mais Materiais Qlik:** [Meus Documentos, Apps e Arquivos na Qlik Community](https://community.qlik.com/t5/Brasil/Publica%C3%A7%C3%B5es-de-MARIO-SOARES-Documentos-Aplicativos-e-Arquivos/td-p/1464214)
+* 🌐 **Bio Page & Projetos:** [cubo.plus/mariosergioti](https://cubo.plus/mariosergioti)
+* 💼 **LinkedIn:** [linkedin.com/in/mariosergioti](https://linkedin.com/in/mariosergioti)
+* 🏢 **Empresa:** [Cubotimize](https://cubotimize.com)
+* 📸 **Instagram:** [https://www.instagram.com/mariosoares_ti/](https://www.instagram.com/mariosoares_ti/)
+* 📊 **Mais Materiais Qlik:** [Publicações na Qlik Community](https://community.qlik.com/t5/Brasil/Publica%C3%A7%C3%B5es-de-MARIO-SOARES-Documentos-Aplicativos-e-Arquivos/td-p/1464214)
